@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tailwindcss Project</title>
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/a2c8cc66f2.js" crossorigin="anonymous"></script>
+
+    <!-- google icon link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                clifford: '#da373d',
+            }
+            }
+        }
+        }
+    </script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- layout -->
+    <div class="bg-gray-100 min-h-screen">
+        <!-- navbar -->
+        <div class="h-16 fixed top-0 left-0 z-30 w-full flex items-center bg-white shadow lg:pl-80 px-8 py-5">
+
+            <!-- bars icon -->
+            <div id="bars" class="lg:hidden block">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                  
+            </div>
+            <!-- bars icon end -->
+            
+            <!-- search -->
+            <div class="hidden lg:block">
+                <span class="material-symbols-outlined cursor-pointer">
+                    search
+                </span>
+            </div>
+            <!-- search end -->
+
+            <!-- account icon -->
+            <div class="ml-auto flex items-center gap-[16px]">
+
+                <span class="material-symbols-outlined cursor-pointer">
+                    group
+                </span>
+
+                <span class="material-symbols-outlined cursor-pointer">
+                    notifications
+                </span>
+
+             
+                <figure class="cursor-pointer">
+                    <img src="./images/Avatar.svg" alt="">
+                </figure>
+            </div>
+            <!-- account icon end -->
+        </div>
+        <!-- navbar end -->
+
+        <!-- sidebar -->
+        <div id="side" class="fixed top-0 left-0 bg-[#111827]  h-screen w-72 z-40 flex flex-col transition-all px-[16px] py-[24px]">
+            <!-- side logo -->
+            <figure class="mb-[24px]">
+                <img src="./images/logo-container.svg" alt="">
+            </figure>
+            <!-- side logo end -->
+
+            <!-- close icon -->
+            <div id="close_bars" class="lg:hidden absolute top-5 right-3 flex items-center justify-center text-white text-base bg-orange-500 w-5 h-5 rounded-full hover:bg-blue-500 transition">
+                X
+            </div>
+            <!-- close icon end -->
+
+            <!-- second logo -->
+            <div class="flex items-center bg-[#FFFFFF0A] px-[24px] py-[11px] rounded-[8px] mb-[39px]">
+                <div class="text">
+                    <h3 class="text-[#FFFFFF] text-base">Acme Inc</h3>
+                    <p class="text-[#9CA3AF]">Your tier: <span>Premium</span></p>
+                </div>
+
+                <span class="text-[#9CA3AF] material-symbols-outlined ml-auto cursor-pointer">
+                    unfold_more
+                </span>
+            </div>
+            <!-- second logo end -->
+
+            <!-- space between -->
+            <div class="flex flex-col flex-grow justify-between">
+                <!-- category -->
+                <div class="py-[10px]">
+
+                    <!-- single link -->
+                    <a href="#" class="flex items-center gap-2 text-[#D1D5DB] py-[8px] px-[16px] mb-[4px] hover:bg-[#FFFFFF14] hover:text-[#10B981] rounded-[8px]">
+
+                        <span class="material-symbols-outlined">
+                            signal_cellular_alt
+                        </span>
+
+                        Dashboard
+                    </a>
+                    <!-- single link end -->
+                    <!-- single link -->
+                    <a href="#" class="flex items-center gap-2 text-[#D1D5DB] py-[8px] px-[16px] mb-[4px] hover:bg-[#FFFFFF14] hover:text-[#10B981] rounded-[8px]">
+
+                        <span class="material-symbols-outlined">
+                            group
+                        </span>
+
+                        Customers
+                    </a>
+                    <!-- single link end -->
+
+                    <!-- single link -->
+                    <a href="#" class="flex items-center gap-2 text-[#D1D5DB] py-[8px] px-[16px] mb-[4px] hover:bg-[#FFFFFF14] hover:text-[#10B981] rounded-[8px]">
+
+                        <span class="material-symbols-outlined">
+                            shopping_bag
+                        </span>
+
+                        Products
+                    </a>
+                    <!-- single link end -->
+                    <!-- single link -->
+                    <a href="#" class="flex items-center gap-2 text-[#D1D5DB] py-[8px] px-[16px] mb-[4px] hover:bg-[#FFFFFF14] hover:text-[#10B981] rounded-[8px]">
+
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+
+                        Account
+                    </a>
+                    <!-- single link end -->
+                    <!-- single link -->
+                    <a href="#" class="flex items-center gap-2 text-[#D1D5DB] py-[8px] px-[16px] mb-[4px] hover:bg-[#FFFFFF14] hover:text-[#10B981] rounded-[8px]">
+
+                        <span class="material-symbols-outlined">
+                            settings
+                        </span>
+
+                        Settings
+                    </a>
+                    <!-- single link end -->
+                    <!-- single link -->
+                    <a href="#" class="flex items-center gap-2 text-[#D1D5DB] py-[8px] px-[16px] mb-[4px] hover:bg-[#FFFFFF14] hover:text-[#10B981] rounded-[8px]">
+
+                        <span class="material-symbols-outlined">
+                            lock
+                        </span>
+
+                        Login
+                    </a>
+                    <!-- single link end -->
+                    <!-- single link -->
+                    <a href="#" class="flex items-center gap-2 text-[#D1D5DB] py-[8px] px-[16px] mb-[4px] hover:bg-[#FFFFFF14] hover:text-[#10B981] rounded-[8px]">
+
+                        <span class="material-symbols-outlined">
+                            person_add
+                        </span>
+
+                        Register
+                    </a>
+                    <!-- single link end -->
+                    <!-- single link -->
+                    <a href="#" class="flex items-center gap-2 text-[#D1D5DB] py-[8px] px-[16px] mb-[4px] hover:bg-[#FFFFFF14] hover:text-[#10B981] rounded-[8px]">
+
+                        <span class="material-symbols-outlined">
+                            cancel
+                        </span>
+
+                        Error
+                    </a>
+                    <!-- single link end -->
+
+                    
+                </div>
+                <!-- category end -->
+
+                <!-- more feature -->
+                <div class="more">
+                    <div class="mb-[16px]">
+                        <h3 class="text-base text-[#F3F4F6]">Need more features?</h3>
+                        <p class="text-[14px] text-[#9CA3AF]">Check out our Pro solution template.</p>
+                    </div>
+
+                    <figure class="flex items-center justify-center mb-[16px]">
+                        <img src="./images/feature_logo.svg" alt="">
+                    </figure>
+
+                    <!-- single link -->
+                    <a href="#" class="flex items-center justify-center gap-2 text-[#FFFFFF] py-[8px] px-[16px] mb-[4px] bg-[#10B981] rounded-[8px]">
+
+                        Pro Live Preview
+
+                        <span class="material-symbols-outlined">
+                            edit_square
+                        </span>
+                    </a>
+                    <!-- single link end -->
+                </div>
+                <!-- more feature end -->
+            </div>
+            <!-- space between end -->
+        </div>
+        <!-- sidebar end -->
+
+        
+        
+    </div>
+    <!-- layout end -->
+    
+    
+    <script src="./app.js"></script>
+</body>
+</html>
